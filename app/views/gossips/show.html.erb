@@ -1,0 +1,7 @@
+<h1><%= @my_gossip.title %>
+</h1>
+<p><%= @my_gossip.content %></p>
+<p>Crée le : <%= @my_gossip.created_at%> <br />
+	par : <a href="<%= users_path(@my_author.id) %>" > <%= @my_author.first_name %> </a>
+	
+</p>

@@ -1,0 +1,16 @@
+<% if flash[:danger] %>
+<div class="alert alert-danger" role="alert">
+<%=  flash[:danger]%>
+ </div>
+ <% end %>
+
+
+
+
+<form action= <%= gossips_path %> method="POST">
+      <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %> >
+      Titre du gossip <input type="text" name="title"> <br />
+      Gossip<input type="text" name="content">
+      <input type="submit" value="Valider">
+</form>
+
